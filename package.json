@@ -1,8 +1,11 @@
 {
-  "name": "hw8",
+  "name": "teamprofilegenerator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js", 
+  "description": "a node.js application to create team profiles",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "test": "jest"
   },
