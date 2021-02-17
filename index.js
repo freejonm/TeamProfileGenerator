@@ -2,12 +2,12 @@ const fs = require('fs');
 const { prompt } = require ('inquirer');
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
-const Intern = require('./intern');
+const Intern = require('./lib/intern');
 
 let team = [];
 let newMember = {};
 
-const buildTeam = ()=>{
+function buildTeam() {
     prompt ([
         {
             type: 'input',
@@ -84,3 +84,68 @@ const buildTeam = ()=>{
 
     })
 };
+
+function addMember(){
+    let managerData=`<div class="row">`;
+    let engineerData=`<div class="row">`;
+    let internData=`<div clas="row">`;
+
+    for(i=0; i < member.length; i++){
+        switch (member[i].getRole()){
+        case 'Manager': 
+            managerData += `
+            <div class='col'>
+                <div class='manager1'>
+                    <p>${member[i].getName()}</p>
+                    <p><i class="fas fa-street-view"></i> manager</p>
+                </div>
+                <div class='content'>
+                    <p>Id: ${member[i].getId()}</p><hr>
+                    <p>Email: <a href="mailto:${member[i].getEmail()}">${member[i].getEmail()}</a></p><hr>
+                    <p>Office #: ${member[i].getOfficeNumber()}</p>
+                </div>
+            </div>`
+
+            break;
+
+        case 'Engineer':
+             engineerData += 
+            `<div class='col-md-2'>
+                <div class='engineer1'>
+                    <p>${member[i].getName()}</p>
+                    <p><i class="fas fa-calculator"></i> engineer</p>
+                </div>
+                <div class='content'>
+                    <p>Id: ${member[i].getId()}</p><hr>
+                    <p>Email: <a href="mailto:${member[i].getEmail()}">${member[i].getEmail()}</a></p><hr>
+                    <p>Github: <a href="http://github.com/${member[i].getGithub()}">${member[i].getGithub()}</a></p>
+                </div>
+            </div>`
+            break;
+
+        case 'Intern':
+            internData += `<div class='col-md-2'>
+            <div class='intern1'>
+                <p>${member[i].getName()}</p()>
+                <p><i class="fas fa-school"></i> intern</p>
+            </div>
+            <div class='content'>
+                <p>Id: ${member[i].getId()}</p><hr>
+                <p>Email: <a href="mailto:${member[i].getEmail()}">${member[i].getEmail()}</a></p><hr>
+                <p>School : ${member[i].getSchool()}</p>
+            </div>
+            </div>`
+            break;
+        };
+    
+    managerData += `</div>`;
+    engineerData += `</div>`;
+    internData += `</div>`;
+    
+    fs.appendFileSync('./dist/TeamProfile.html',managerData);
+    fs.appendFileSync('./dist/TeamProfile.html',engineerData);
+    fs.appendFileSync('./dist/TeamProfile.html',internData);
+    };
+    
+}
+
