@@ -27,20 +27,20 @@
 .manager1 {
     background-color: #28c6ee;
     border: 2px solid #0c09b1;
-    border-radius: 5px;
+   
 }
 
 .engineer1 {
     background-color: #12af7b;
     border: 2px solid #375225;
-    border-radius: 5px;
+    
 }
 
 .intern1 {
     background-color: #e9d45b;
     color: black;
     border: 2px solid #773907;
-    border-radius: 5px;
+  
 }
 
 .content {

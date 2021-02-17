@@ -15,6 +15,9 @@ To install, run the following command:
 node index.js
 ```
 ## Usage
+View a walkthrough video of the app here: 
+https://drive.google.com/file/d/1dAuyaXV4ec0FtHxvcw_4lHvAuBObN836/view
+
 Open the app using node index.js and respond to the prompts. 
 
 ![](./images/nodeprompts.png)
