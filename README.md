@@ -15,8 +15,10 @@ To install, run the following command:
 node index.js
 ```
 ## Usage
-Open the app using node index.js and respond to the prompts. Your team members' information will appear in the html file in the dist folder. 
+Open the app using node index.js and respond to the prompts. 
 ![](./images/nodeprompts.png)
+Your team members' information will appear in the html file in the dist folder. 
+![](./images/htmlshot.png)
 ## Contributing
 Email me to discuss contribution. 
 ## Tests

@@ -100,7 +100,7 @@ function addMember(member){
                     <p><i class="fas fa-street-view"></i> manager</p>
                 </div>
                 <div class='content'>
-                    <p>Id: ${member[i].getId()}</p><hr>
+                    <p>Id: ${member[i].getID()}</p><hr>
                     <p>Email: <a href="mailto:${member[i].getEmail()}">${member[i].getEmail()}</a></p><hr>
                     <p>Office #: ${member[i].getOfficeNumber()}</p>
                 </div>
@@ -116,7 +116,7 @@ function addMember(member){
                     <p><i class="fas fa-calculator"></i> engineer</p>
                 </div>
                 <div class='content'>
-                    <p>Id: ${member[i].getId()}</p><hr>
+                    <p>Id: ${member[i].getID()}</p><hr>
                     <p>Email: <a href="mailto:${member[i].getEmail()}">${member[i].getEmail()}</a></p><hr>
                     <p>Github: <a href="http://github.com/${member[i].getGithub()}">${member[i].getGithub()}</a></p>
                 </div>
@@ -130,7 +130,7 @@ function addMember(member){
                 <p><i class="fas fa-school"></i> intern</p>
             </div>
             <div class='content'>
-                <p>Id: ${member[i].getId()}</p><hr>
+                <p>Id: ${member[i].getID()}</p><hr>
                 <p>Email: <a href="mailto:${member[i].getEmail()}">${member[i].getEmail()}</a></p><hr>
                 <p>School : ${member[i].getSchool()}</p>
             </div>
