@@ -16,7 +16,7 @@ node index.js
 ```
 ## Usage
 Open the app using node index.js and respond to the prompts. Your team members' information will appear in the html file in the dist folder. 
-![](/images/nodeprompts)
+![](/images/nodeprompts.png)
 ## Contributing
 Email me to discuss contribution. 
 ## Tests
