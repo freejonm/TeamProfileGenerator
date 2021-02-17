@@ -1,4 +1,4 @@
-const Intern= require('../lib/Intern');
+const Intern= require('../lib/intern.js');
 
 describe("intern class", ()=>{
     it("should return user input for Interns", ()=>{

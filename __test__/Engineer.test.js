@@ -1,12 +1,12 @@
-const Engineer= require('../lib/engineer');
+const Engineer= require('../lib/engineer.js');
 
 describe("Engineer class", ()=>{
     it("should return user input for engineers", ()=>{
-        const engineer = new engineer('Jon', 123, 'freejonm@gmail.com', 'github')
-        expect(engineer.name).toBe('Jon')
-        expect(engineer.id).toBe(123);
-        expect(engineer.email).toBe("freejonm@gmail.com");
-        expect(engineer.github).toBe("github");
+        const myEngineer = new Engineer('Jon', 123, 'freejonm@gmail.com', 'github')
+        expect(myEngineer.name).toBe('Jon')
+        expect(myEngineer.id).toBe(123);
+        expect(myEngineer.email).toBe("freejonm@gmail.com");
+        expect(myEngineer.github).toBe("github");
     })
     test("should return correctl value from each method", ()=>{
         const myEngineer = new Engineer ("Jon", 123, "freejonm@gmail.com", 'github');
