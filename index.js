@@ -85,12 +85,12 @@ function buildTeam() {
     })
 };
 
-function addMember(){
+function addMember(member){
     let managerData=`<div class="row">`;
     let engineerData=`<div class="row">`;
     let internData=`<div clas="row">`;
 
-    for(i=0; i < member.length; i++){
+    for(i=0; i < team.length; i++){
         switch (member[i].getRole()){
         case 'Manager': 
             managerData += `
